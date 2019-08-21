@@ -3,6 +3,7 @@
     "description": "Coming soon",
     "type": "library",
     "license": "MIT",
+	"version": "dev-master",
     "authors": [
         {
             "name": "Massfice",
