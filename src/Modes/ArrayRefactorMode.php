@@ -1,10 +1,10 @@
 <?php
 
-namespace ArrayRefactor\Modes;
+namespace Massfice\ArrayRefactor\Modes;
 
 interface ArrayRefactorMode {
 	
-	public function refactor(Massfice\ArrayRefactor\Methods\ArrayRefactorMethod $method, array $array, array $args) : array;
+	public function refactor(\Massfice\ArrayRefactor\Methods\ArrayRefactorMethod $method, array $array, array $args) : array;
 	
 }
 

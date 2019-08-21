@@ -8,14 +8,14 @@ class Multi implements ArrayRefactorMode {
 	protected $reverse;
 	
 	public function __construct() {
-		$selector = ArrayRefactor\ArrayRefactory::createSelector('Blank');
+		$selector = \Massfice\ArrayRefactor\ArrayRefactory::createSelector('Blank');
 		$this->select($selector);
 		$this->reverse(true);
 	}
 	
-	public function refactor(ArrayRefactor\Methods\ArrayRefactorMethod $method, array $array, array $args) : array {
+	public function refactor(\Massfice\ArrayRefactor\Methods\ArrayRefactorMethod $method, array $array, array $args) : array {
 		
-		$cmethod = Massfice\ArrayRefactor\ArrayRefactory::createCheckerMethod('ValuesExist');
+		$cmethod = \Massfice\ArrayRefactor\ArrayRefactory::createCheckerMethod('ValuesExist');
 		
 		foreach($array as $key => $item) {
 			$b = $cmethod->check($this->selected,[$key]);
@@ -30,7 +30,7 @@ class Multi implements ArrayRefactorMode {
 		return $r_array;
 	}
 	
-	public function select(Massfice\ArrayRefactor\Selectors\ArraySelector $selector) {
+	public function select(\Massfice\ArrayRefactor\Selectors\ArraySelector $selector) {
 		$this->selected = $selector->select();
 	}
 	

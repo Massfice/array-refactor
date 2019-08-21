@@ -1,6 +1,6 @@
 <?php
 
-namespace Massfice/ArrayRefactor;
+namespace Massfice\ArrayRefactor;
 
 class ArrayRefactor {
 	
