@@ -6,7 +6,7 @@ class Filter implements ArrayRefactorMethod {
 	
 	public function refactor(array $array, array $args) : array {
 		
-		$checker = Massfice\ArrayRefactor\ArrayRefactory::createChecker();
+		$checker = \Massfice\ArrayRefactor\ArrayRefactory::createChecker();
 		
 		$r_arr = [
 			'Correct' => [],
