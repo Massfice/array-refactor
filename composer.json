@@ -9,7 +9,7 @@
             "email": "adrian.marian.tomasz.larysz@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {},
 	"autoload": {
 		"psr-4": {"Massfice\\ArrayRefactor\\": "src/"}
