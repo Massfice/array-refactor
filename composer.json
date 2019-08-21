@@ -1,0 +1,17 @@
+{
+    "name": "massfice/array-refactor",
+    "description": "Coming soon",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Massfice",
+            "email": "adrian.marian.tomasz.larysz@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+	"autoload": {
+		"psr-4": {"Massfice\\ArrayRefactor\\": "src/"}
+    }
+}
